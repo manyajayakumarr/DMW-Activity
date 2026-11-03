@@ -1,0 +1,29 @@
+import csv
+
+folder = "train"
+
+with open(folder + "/X_train.txt") as xfile, \
+     open(folder + "/y_train.txt") as yfile, \
+     open("features.txt") as featurefile:
+
+    features = [line.split()[1] for line in featurefile]
+
+    activities = {
+        "1": "WALKING",
+        "2": "WALKING_UPSTAIRS",
+        "3": "WALKING_DOWNSTAIRS",
+        "4": "SITTING",
+        "5": "STANDING",
+        "6": "LAYING"
+    }
+
+    with open("HAR_train.csv", "w", newline="") as outfile:
+        writer = csv.writer(outfile)
+        writer.writerow(features + ["activity"])
+
+        for x, y in zip(xfile, yfile):
+            values = x.split()
+            label = activities[y.strip()]
+            writer.writerow(values + [label])
+
+print("CSV created successfully!")
