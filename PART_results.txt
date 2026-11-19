@@ -1,0 +1,247 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.PART -C 0.25 -M 2
+Relation:     HAR_train
+Instances:    7352
+Attributes:   562
+              [list of attributes omitted]
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+PART decision list
+------------------
+
+feature_53 <= -0.004372: LAYING (1407.0)
+
+feature_390 <= -0.974843 AND
+feature_560 > 0.140461 AND
+feature_140 > -0.997048 AND
+feature_133 <= 0.845546 AND
+feature_143 > -0.861106 AND
+feature_158 <= 0.441709 AND
+feature_55 > -0.042136: STANDING (655.0)
+
+feature_390 <= -0.974843 AND
+feature_51 > -0.1119 AND
+feature_50 <= 0.871305 AND
+feature_382 <= -0.998837: SITTING (691.0)
+
+feature_390 <= -0.974843 AND
+feature_42 <= -0.168445 AND
+feature_199 <= 0.157177 AND
+feature_117 > -0.247453 AND
+feature_200 <= 0.162335 AND
+feature_525 <= 0.079365 AND
+feature_133 <= 0.845376: STANDING (352.0/1.0)
+
+feature_390 <= -0.976657 AND
+feature_561 > 0.137249 AND
+feature_52 > -0.366528 AND
+feature_122 > -0.131938 AND
+feature_130 > -0.899377 AND
+feature_482 <= -0.982503: STANDING (102.0)
+
+feature_390 <= -0.976657 AND
+feature_51 > 0.039731 AND
+feature_52 > -0.125607: SITTING (178.0/1.0)
+
+feature_103 <= 0.172445 AND
+feature_130 <= -0.869642 AND
+feature_56 <= -0.82834 AND
+feature_470 > -0.999969: STANDING (19.0)
+
+feature_103 <= 0.172445 AND
+feature_130 <= -0.869642 AND
+feature_51 > -0.328291 AND
+feature_4 > -0.99836 AND
+feature_452 > -0.127015 AND
+feature_557 <= 0.592608 AND
+feature_551 <= -0.492063 AND
+feature_40 > -0.399992 AND
+feature_20 > -0.997347: SITTING (184.0)
+
+feature_235 <= 0.158043 AND
+feature_424 <= -0.996536: SITTING (43.0/1.0)
+
+feature_235 <= 0.158043 AND
+feature_449 <= -0.4 AND
+feature_123 <= 0.162318 AND
+feature_151 <= -0.097971: STANDING (43.0/1.0)
+
+feature_235 <= 0.158043 AND
+feature_449 <= -0.4 AND
+feature_123 <= 0.162318 AND
+feature_433 <= -0.996523 AND
+feature_551 <= -0.714286: SITTING (22.0)
+
+feature_235 <= 0.158043 AND
+feature_449 <= -0.4 AND
+feature_431 > -0.992807 AND
+feature_143 > -1 AND
+feature_140 <= -0.989008 AND
+feature_551 <= -0.619048 AND
+feature_350 > -0.990904 AND
+feature_29 > -0.136899: SITTING (44.0)
+
+feature_235 <= 0.158043 AND
+feature_449 <= -0.4 AND
+feature_130 > -0.888651 AND
+feature_354 > -0.996132 AND
+feature_451 <= -0.724138 AND
+feature_434 > -0.988258 AND
+feature_427 > -0.947409 AND
+feature_132 <= -0.452688 AND
+feature_64 <= -0.115259 AND
+feature_109 > -0.056665 AND
+feature_189 > -0.086275: STANDING (59.0)
+
+feature_13 > 0.621743 AND
+feature_429 <= -0.902327 AND
+feature_449 <= -0.4 AND
+feature_410 <= -0.999058 AND
+feature_159 <= 0.726089 AND
+feature_123 <= 0.122 AND
+feature_181 <= -0.993947: STANDING (74.0)
+
+feature_13 > 0.621743 AND
+feature_451 <= -0.724138 AND
+feature_69 > 0.122906 AND
+feature_54 <= 0.085812 AND
+feature_557 <= 0.840826 AND
+feature_265 > -0.33012 AND
+feature_56 > -0.919513 AND
+feature_58 > -0.999819 AND
+feature_533 > -0.998008 AND
+feature_195 > -0.266337: SITTING (97.0)
+
+feature_94 > 0.860691 AND
+feature_177 > -0.999934 AND
+feature_429 <= -0.902327 AND
+feature_153 > -0.29444 AND
+feature_64 <= -0.160193 AND
+feature_546 > -0.998179 AND
+feature_140 > -0.985746: STANDING (59.0)
+
+feature_509 > -0.524631 AND
+feature_160 <= 0.275672 AND
+feature_67 > 0.371251 AND
+feature_75 <= 0.689674 AND
+feature_51 > -0.281123 AND
+feature_504 > -0.17821 AND
+feature_234 > -0.453166: WALKING_DOWNSTAIRS (684.0)
+
+feature_209 <= 0.424118 AND
+feature_19 > -0.999406 AND
+feature_150 <= -0.0621: SITTING (28.0/1.0)
+
+feature_75 > 0.563751 AND
+feature_58 > -0.971884 AND
+feature_53 <= 0.955546 AND
+feature_451 <= -0.793103 AND
+feature_118 <= -0.074747 AND
+feature_410 > -0.954323: WALKING_UPSTAIRS (755.0/2.0)
+
+feature_229 <= -0.658139 AND
+feature_367 > -0.461978: WALKING_UPSTAIRS (22.0)
+
+feature_504 <= -0.310458 AND
+feature_95 <= 0.79991 AND
+feature_449 > -1 AND
+feature_210 > -0.352069 AND
+feature_296 > -0.327977 AND
+feature_435 <= -0.186539 AND
+feature_38 > -0.343987 AND
+feature_68 > -0.773772 AND
+feature_23 > 0.122842: WALKING (1011.0)
+
+feature_387 <= -0.976464 AND
+feature_538 <= -0.897436: STANDING (10.0)
+
+feature_70 > -0.189926 AND
+feature_51 > -0.315827 AND
+feature_370 > -0.88 AND
+feature_291 <= -0.741935 AND
+feature_38 > -0.54019 AND
+feature_449 > -1 AND
+feature_133 <= 0.635744: WALKING (126.0)
+
+feature_303 <= -0.778876 AND
+feature_451 > -1 AND
+feature_39 > -0.40722 AND
+feature_55 > -0.50942 AND
+feature_38 > -0.515026 AND
+feature_142 <= -0.265976 AND
+feature_372 > -0.88: WALKING (63.0)
+
+feature_90 > -0.283409 AND
+feature_10 > 0.059642 AND
+feature_462 <= -0.423297 AND
+feature_103 <= 0.766129 AND
+feature_23 <= 0.558604 AND
+feature_419 > -0.970048: WALKING_DOWNSTAIRS (185.0)
+
+feature_58 <= -0.960202 AND
+feature_63 <= 0.033204 AND
+feature_160 <= 0.181228: WALKING_DOWNSTAIRS (75.0/1.0)
+
+feature_62 > -0.98581 AND
+feature_539 <= 0.288713 AND
+feature_292 <= -0.733333 AND
+feature_423 <= -0.778223 AND
+feature_4 <= 0.071825 AND
+feature_299 > -0.545485 AND
+feature_329 > -0.667518 AND
+feature_413 <= -0.857806: WALKING_UPSTAIRS (249.0/1.0)
+
+feature_53 <= 0.870214: WALKING_UPSTAIRS (36.0/1.0)
+
+feature_160 > 0.187183 AND
+feature_332 > -0.865196: WALKING (18.0)
+
+feature_467 <= -0.799132 AND
+feature_24 > 0.126789 AND
+feature_51 > -0.311412: WALKING_DOWNSTAIRS (42.0/1.0)
+
+feature_229 <= -0.176242: WALKING_UPSTAIRS (14.0)
+
+: WALKING (5.0)
+
+Number of Rules  : 	32
+
+
+Time taken to build model: 14.59 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        7051               95.9059 %
+Incorrectly Classified Instances       301                4.0941 %
+Kappa statistic                          0.9507
+Mean absolute error                      0.0141
+Root mean squared error                  0.116 
+Relative absolute error                  5.1028 %
+Root relative squared error             31.1796 %
+Total Number of Instances             7352     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.951    0.014    0.942      0.951    0.946      0.934    0.978     0.927     STANDING
+                 0.936    0.012    0.944      0.936    0.940      0.928    0.972     0.913     SITTING
+                 0.999    0.000    1.000      0.999    1.000      1.000    1.000     0.999     LAYING
+                 0.956    0.007    0.965      0.956    0.960      0.952    0.978     0.933     WALKING
+                 0.954    0.009    0.944      0.954    0.949      0.941    0.981     0.918     WALKING_DOWNSTAIRS
+                 0.952    0.008    0.953      0.952    0.953      0.945    0.978     0.939     WALKING_UPSTAIRS
+Weighted Avg.    0.959    0.008    0.959      0.959    0.959      0.951    0.982     0.940     
+
+=== Confusion Matrix ===
+
+    a    b    c    d    e    f   <-- classified as
+ 1306   67    0    0    1    0 |    a = STANDING
+   79 1204    0    2    0    1 |    b = SITTING
+    0    1 1406    0    0    0 |    c = LAYING
+    2    1    0 1172   25   26 |    d = WALKING
+    0    0    0   22  941   23 |    e = WALKING_DOWNSTAIRS
+    0    2    0   19   30 1022 |    f = WALKING_UPSTAIRS
+

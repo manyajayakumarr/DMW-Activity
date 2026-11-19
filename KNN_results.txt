@@ -1,0 +1,50 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.lazy.IBk -K 1 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     HAR_train
+Instances:    7352
+Attributes:   562
+              [list of attributes omitted]
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+IB1 instance-based classifier
+using 1 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        7168               97.4973 %
+Incorrectly Classified Instances       184                2.5027 %
+Kappa statistic                          0.9699
+Mean absolute error                      0.0086
+Root mean squared error                  0.0913
+Relative absolute error                  3.1007 %
+Root relative squared error             24.5352 %
+Total Number of Instances             7352     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.940    0.015    0.934      0.940    0.937      0.922    0.964     0.890     STANDING
+                 0.928    0.014    0.934      0.928    0.931      0.916    0.955     0.887     SITTING
+                 0.999    0.000    1.000      0.999    0.999      0.999    1.000     0.999     LAYING
+                 0.999    0.000    0.998      0.999    0.998      0.998    0.999     0.997     WALKING
+                 0.996    0.000    0.999      0.996    0.997      0.997    0.998     0.996     WALKING_DOWNSTAIRS
+                 0.998    0.001    0.996      0.998    0.997      0.997    0.998     0.994     WALKING_UPSTAIRS
+Weighted Avg.    0.975    0.005    0.975      0.975    0.975      0.969    0.985     0.957     
+
+=== Confusion Matrix ===
+
+    a    b    c    d    e    f   <-- classified as
+ 1291   83    0    0    0    0 |    a = STANDING
+   91 1194    0    0    0    1 |    b = SITTING
+    0    2 1405    0    0    0 |    c = LAYING
+    0    0    0 1225    1    0 |    d = WALKING
+    0    0    0    1  982    3 |    e = WALKING_DOWNSTAIRS
+    0    0    0    2    0 1071 |    f = WALKING_UPSTAIRS
+

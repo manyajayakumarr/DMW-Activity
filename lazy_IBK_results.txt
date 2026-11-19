@@ -1,0 +1,50 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.lazy.IBk -K 1 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     HAR_train-weka.filters.unsupervised.attribute.Discretize-B10-M-1.0-Rfirst-last-precision6-weka.filters.unsupervised.attribute.Discretize-B10-M-1.0-Rfirst-last-precision6
+Instances:    7352
+Attributes:   562
+              [list of attributes omitted]
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+IB1 instance-based classifier
+using 1 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        7151               97.2661 %
+Incorrectly Classified Instances       201                2.7339 %
+Kappa statistic                          0.9671
+Mean absolute error                      0.0093
+Root mean squared error                  0.0917
+Relative absolute error                  3.3511 %
+Root relative squared error             24.6338 %
+Total Number of Instances             7352     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.954    0.019    0.920      0.954    0.937      0.922    0.972     0.905     STANDING
+                 0.915    0.013    0.938      0.915    0.926      0.911    0.957     0.895     SITTING
+                 0.981    0.001    0.996      0.981    0.988      0.985    0.992     0.984     LAYING
+                 0.999    0.000    1.000      0.999    1.000      1.000    1.000     0.999     WALKING
+                 0.999    0.000    1.000      0.999    0.999      0.999    0.999     0.999     WALKING_DOWNSTAIRS
+                 1.000    0.000    0.997      1.000    0.999      0.998    1.000     0.997     WALKING_UPSTAIRS
+Weighted Avg.    0.973    0.006    0.973      0.973    0.973      0.967    0.985     0.960     
+
+=== Confusion Matrix ===
+
+    a    b    c    d    e    f   <-- classified as
+ 1311   63    0    0    0    0 |    a = STANDING
+  102 1177    6    0    0    1 |    b = SITTING
+   12   15 1380    0    0    0 |    c = LAYING
+    0    0    0 1225    0    1 |    d = WALKING
+    0    0    0    0  985    1 |    e = WALKING_DOWNSTAIRS
+    0    0    0    0    0 1073 |    f = WALKING_UPSTAIRS
+
